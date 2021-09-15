@@ -1,0 +1,98 @@
+@import '../../styles/variables';
+
+.card{
+    position: absolute;
+    width: 40%;
+    background: $primary-color;
+    color: $white-color;
+    border-radius: 10px;
+
+    &__close {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        border: none;
+        background: $secondary-color;
+        color: $white-color;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    &__display-picture {
+        display: flex;
+        justify-content: center;
+        padding-top: 24px;
+
+        img {
+            border-radius: 50%;
+            border: 3px solid $secondary-color;
+        }
+
+    }
+
+    &__information {
+        padding: 12px 24px;
+    }
+
+    &__username {
+        font-size: 2.4rem;
+        opacity: 0.5;
+
+        &-firstname {
+            text-transform: lowercase;
+        }
+
+        &-lastname {
+            text-transform: uppercase;
+        }
+
+    }
+
+    &__details {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 32px;
+        text-align: left;
+
+        &-key {
+            flex: 1 1;
+        }
+
+        &-value {
+            flex: 50% 1;
+        }
+
+    }
+
+    &__label {
+        padding: 4px;
+        color: $white-color;
+        white-space: nowrap;
+        background: $secondary-color;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 32px;
+
+        &-value {
+            padding-left: 8px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .card {
+        width: calc(100% - 24px);
+        left: 12px;
+
+        &__information{
+            padding: 12px 12px;
+        }
+
+    }
+
+}

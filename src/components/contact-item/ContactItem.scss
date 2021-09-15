@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.contact {
+
+    &__item {
+        flex: 0 1 calc(50% - 48px);
+        border-bottom: 1px solid $white-color;
+        list-style: none;
+        margin: 0px 24px 0;
+        line-height: 44px;
+        text-align: left;
+        cursor: pointer;
+        list-style: none;
+        cursor: pointer;
+
+        &--disabled {
+            text-align: center;
+        }
+
+        &:hover {
+            color: $secondary-color;
+        }
+
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .contact {
+
+        &__item {
+            margin: 8px;
+            flex-basis: 100%;
+        }
+
+    }
+
+}

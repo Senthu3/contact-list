@@ -1,0 +1,72 @@
+@import '../../styles/variables';
+
+.contact {
+    &__tab {
+        background: $primary-color;
+        padding: 8px;
+        cursor: pointer;
+        display: inline-block;
+        width: 36px;
+        color: $white-color;
+        border: 1px solid $white-color;
+        border-right: 0;
+        border-radius: 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        position: relative;
+
+        &-wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &--active {
+            background: $secondary-color;
+            cursor: default;
+            border-bottom: none;
+        }
+
+        &--disabled {
+            background: $tertiary-color;
+        }
+
+        &-arrows {
+            text-align: center;
+        }
+
+        &-arrow {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background: $primary-color;
+            color: $white-color;
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            margin-bottom: 12px;
+
+            &--disabled {
+                background: $tertiary-color;
+                cursor: not-allowed;
+            }
+        }
+
+        &-back {
+            margin-right: 12px;
+        }
+
+        &-next {
+            margin-left: 12px;
+        }
+
+    }
+
+    &__group-count {
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 4px;
+        right: 4px;
+    }
+
+}

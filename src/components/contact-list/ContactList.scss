@@ -1,0 +1,62 @@
+@import '../../styles/variables';
+
+.contact {
+    &__wrapper {
+        max-width: 960px;
+        margin: auto;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 3.4rem;
+        margin: 40px 24px;
+        color: $primary-color;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 20px 40px;
+        position: relative;
+        border: 1px solid $primary-color;
+        background: $primary-color;
+        color:$white-color;
+
+        &--disabled {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 20px 40px;
+            position: relative;
+            border: 1px solid $primary-color;
+            background: $primary-color;
+            color:$white-color;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .contact {
+
+        &__wrapper {
+            padding: 24px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin: 12px;
+        }
+
+        &__list {
+            padding: 12px;
+        }
+
+    }
+
+}
+
+
